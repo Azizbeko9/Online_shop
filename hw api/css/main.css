@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 99;
+
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+
+nav .container {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+nav .container h1 {
+    color: rgb(37, 200, 37);
+    margin-left: 430px;
+    font-size: 50px;
+}
+
+
+.sun {
+    display: flex;
+    gap: 10px;
+}
+
+.sun i {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.inputs input {
+    padding: 7px 50px 7px 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 200, 37);
+    color: white;
+
+
+}
+
+.new {
+    position: absolute;
+    top: -75px;
+    left: -20px;
+    width: 100px;
+}
+
+.card:hover {
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+
+.card:hover .icons {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    bottom: 25px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover .icons .heart {
+    font-size: 23px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px 11px;
+    border-radius: 50%;
+    color: red;
+}
+
+
+.card:hover .icons .eye {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px 9.9px;
+    border-radius: 50%;
+    color: rgb(37, 200, 37);
+    background-color: whitesmoke;
+
+}
+
+.card:hover .icons .repeat {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px 11px;
+    border-radius: 50%;
+    color: black;
+    background-color: whitesmoke;
+
+}
+
+.card:hover .icons .bag {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    color: orange;
+    background-color: whitesmoke;
+
+}
+
+
+.icons {
+    display: none;
+}
+
+.input {
+    padding: 7px 80px 7px 20px;
+    background-color: rgb(37, 200, 37);
+    color: white;
+
+}
+
+
+
+.form:hover {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.71);
+
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.047);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 285px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.card.hidden {
+    display: none;
+}
+
+.card img {
+    width: 70%;
+    height: 200px;
+    margin-left: 30px;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 10px black;
+}
+
+.card h1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 15px;
+}
+
+.card p {
+    padding: 3px;
+    color: rgb(37, 200, 37);
+}
+
+.card span {
+    color: black;
+    padding: 0px 0px 0px 17px;
+    font-weight: 600;
+}
+
+
+body.dark {
+    background-color: #202C36;
+    color: white;
+}
+
+body.dark nav {
+    background-color: #2b38444e;
+}
+
+body.dark nav .container {
+    color: white;
+}
+
+
+body.dark .card {
+    background-color: #2B3844;
+    color: white;
+}
+
+body.dark .card:hover {
+    box-shadow: 1px 2px 10px white;
+
+}
+
+body.dark .input {
+    background-color: white;
+    color: black;
+}
+
+
+body.dark input {
+    background-color: white;
+    color: black;
+}
+
+body.dark option {
+    color: white;
+    background-color: #2B3844;
+}
+
+body.dark .form:hover {
+    box-shadow: 2px 2px 20px white;
+
+}
+
+body.dark .card span {
+    color: white;
+}
+
+body.dark input {
+    color: white;
+    background-color: white;
+}
+
+body.dark .select_value:hover {
+    box-shadow: 2px 2px 10px whitesmoke;
+}
+
+.select_value {
+    padding: 10px 5px;
+    background-color:rgb(37, 200, 37);
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.select_value:hover {
+    box-shadow: 2px 2px 10px black;
+
+}
+
+option {
+    background-color: white;
+    color: black;
+}
+
+.sun .sunn {
+    color: rgb(255, 128, 0);
+}
+
+.sun {
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sun span {
+    color: rgb(255, 128, 0);
+}
+
+
+@media(max-width:496px) {
+    .hero .container {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+    }
+
+    nav .container {
+        width: 90%;
+        font-size: 13px;
+        padding: 30px 0px;
+    }
+
+    nav .container h1 {
+        font-size: 19px;
+        margin-left: 0px;
+    }
+
+    .sun {
+        display: flex;
+        align-items: center;
+    }
+
+    .select1 {
+        position: absolute;
+        left: 38px;
+        top: 120px;
+    }
+
+    .form {
+        margin-bottom: 70px;
+        margin-left: 10px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputs {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
